@@ -1,16 +1,36 @@
 * { box-sizing: border-box; }
 body { font-family: Arial, sans-serif; margin: 0; color: #222; line-height: 1.6; }
-.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: #0b2545; padding: 1rem 2rem; }
-.logo { color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
-.logo span { color: #f5a623; }
+
+/* Header and logo */
+.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: #0b2545; padding: 0.8rem 2rem; }
+.logo { display: flex; align-items: center; gap: 0.7rem; color: #fff; font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+.logo img { height: 50px; width: auto; display: block; }
+.logo em { color: #f5a623; font-style: normal; }
 nav a { color: #fff; margin-left: 1.2rem; text-decoration: none; }
 nav a:hover { color: #f5a623; }
+
+/* Hero and buttons */
 .hero { background: #13315c; color: #fff; text-align: center; padding: 5rem 1.5rem; }
 .hero h1 { font-size: 2.4rem; margin: 0 0 1rem; }
 .btn { display: inline-block; background: #f5a623; color: #0b2545; padding: 0.8rem 1.6rem; border: 0; border-radius: 4px; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1rem; }
+
+/* Sections and cards */
 .section { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+.services { padding-top: 0; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
 .card { border: 1px solid #ddd; border-top: 4px solid #f5a623; border-radius: 6px; padding: 1.5rem; }
-.form { display: grid; gap: 1rem; max-width: 520px; }
-.form input, .form select, .form textarea { padding: 0.8rem; border: 1px solid #bbb; border-radius: 4px; font: inherit; }
-footer { background: #0b2545; color: #fff; text-align: center; padding: 1.2rem; }
+.card ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+
+/* Services page */
+.service-group { padding-bottom:
+.client-grid { margin-top: 1.5rem; }
+.client h3 { margin: 0 0 0.3rem; color: #0b2545; }
+.client p { margin: 0; }
+.client-place { color: #777; font-size: 0.9rem; }
+.client-role { margin: 0.5rem 0 0.2rem; }
+.client a { color: #0b2545; font-weight: bold; text-decoration: none; }
+.client a:hover { color: #f5a623; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1rem 0; }
+.hero .actions { justify-content: center; }
+.btn-whatsapp { background: #25d366; color: #fff; }
+.btn-whatsapp:hover { background: #1ebe5b; }
